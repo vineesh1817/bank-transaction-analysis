@@ -163,6 +163,17 @@ The database protects data quality through:
 - Add monthly customer and merchant reporting views
 - Add dashboard screenshots and analytical findings to the repository
 
+## Interactive Tableau Dashboard
+
+An interactive Tableau dashboard was created to explore transaction volume,
+transaction statuses, merchant-category spending, and customer spending.
+
+The dashboard includes filters for transaction date, channel, and account type.
+
+[View the interactive Tableau dashboard] https://public.tableau.com/app/profile/sai.vineesh.pentyala/viz/Bank_Transaction_Analysis_Dashboard_twbx/BankTransactionAnalysisDashboard?publish=yes
+
+![Bank Transaction Analysis Dashboard](images/bank_transaction_dashboard.png)
+
 ## Author
 
 Sai Vineesh Pentyala  
