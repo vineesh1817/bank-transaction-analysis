@@ -56,6 +56,7 @@ The database contains four main tables:
 | `sql/02_sample_data.sql` | Inserts fictional customers, accounts, merchants, and transaction records. |
 | `sql/03_analysis_queries.sql` | Contains analytical SQL queries that answer business and financial questions. |
 | `sql/04_views_indexes.sql` | Creates reusable reporting views and performance indexes. |
+| `sql/05_dashboard_view.sql` | Creates a transaction-level reporting view for Tableau dashboards. |
 | `README.md` | Explains the project, setup process, database design, and analysis features. |
 | `.gitignore` | Prevents unnecessary or sensitive local files from being uploaded to GitHub. |
 
@@ -85,6 +86,9 @@ psql -v ON_ERROR_STOP=1 -d bank_transaction_analysis -f sql/03_analysis_queries.
 
 # Create the views and indexes
 psql -v ON_ERROR_STOP=1 -d bank_transaction_analysis -f sql/04_views_indexes.sql
+
+# Create the Tableau dashboard view
+psql -v ON_ERROR_STOP=1 -d bank_transaction_analysis -f sql/05_dashboard_view.sql
 ```
 
 The `ON_ERROR_STOP=1` option makes PostgreSQL stop immediately if an SQL file contains an error.
